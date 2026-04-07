@@ -1,0 +1,32 @@
+{
+  "name": "hostel-finder-server",
+  "version": "3.0.0",
+  "description": "StayFinder Backend — Real-time Chat, PDF Agreements, Roommate Finder, Smart Notifications",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "cloudinary": "^1.41.3",
+    "axios": "^1.4.0",
+    "socket.io": "^4.7.2",
+    "nodemailer": "^6.9.7",
+    "razorpay": "^2.9.2",
+    "crypto": "^1.0.1",
+    "pdfkit": "^0.15.0",
+    "qrcode": "^1.5.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

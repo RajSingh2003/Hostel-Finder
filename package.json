@@ -1,0 +1,17 @@
+{
+  "name": "stayfinder-root",
+  "version": "4.0.0",
+  "description": "StayFinder — Smart Hostel & Room Finder with AI Pricing, Real-time Chat, PDF Agreements, Roommate Finder",
+  "scripts": {
+    "install:all":  "npm install && cd client && npm install && cd ../server && npm install",
+    "dev":          "concurrently \"npm run server\" \"npm run client\" --names \"SERVER,CLIENT\" --prefix-colors \"blue,green\"",
+    "server":       "cd server && npm run dev",
+    "client":       "cd client && npm run dev",
+    "seed":         "cd server && node seed.js",
+    "build":        "cd client && npm run build",
+    "ai":           "cd ai-model && uvicorn main:app --reload --port 8000"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
